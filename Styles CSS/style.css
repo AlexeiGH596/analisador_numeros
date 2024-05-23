@@ -22,5 +22,60 @@ body {
 }
 
 h1 {
+    color: #FFF;
+    font-family: var(--fonte_titulos);
+    font-weight: 800;
+    text-align: center;
+    margin-top: 1.5em;
+}
 
+main {
+    color: #000;
+    background-color: #FFF;
+    font-family: var(--fonte_paragrafos);
+    font-weight: 500;
+    width: 40vw;
+    padding: 1em;
+    border: 3px solid #000;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 3em;
+}
+
+main>* {
+    margin: auto 10px;
+}
+
+main>p {
+    display: inline;
+}
+
+.numeros {
+    border: 1px solid #000;
+}
+
+.botao {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px;
+    border-style: solid;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: #000;
+}
+
+.botao:hover {
+    background-color: #d0d0d0;
+}
+
+.lista {
+    width: 200px;
+    border: 1px solid #000;
+    margin: 10px;
+}
+
+section>p {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
 }
