@@ -34,7 +34,7 @@ main {
     background-color: #FFF;
     font-family: var(--fonte_paragrafos);
     font-weight: 500;
-    width: 40vw;
+    max-width: 50vw;
     padding: 1em;
     border: 3px solid #000;
     border-radius: 10px;
@@ -47,10 +47,10 @@ main>* {
 }
 
 main>p {
-    display: inline;
+    display: inline-block;
 }
 
-.numeros {
+.numero {
     border: 1px solid #000;
 }
 
@@ -69,7 +69,7 @@ main>p {
 }
 
 .lista {
-    width: 200px;
+    max-width: 150px;
     border: 1px solid #000;
     margin: 10px;
 }
