@@ -7,8 +7,6 @@
     --cor_tema: #1B7CDE;
 }
 
-/* scroll */
-
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -23,6 +21,6 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    
+h1 {
+
 }
