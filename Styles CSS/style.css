@@ -47,7 +47,7 @@ main>* {
     margin: auto 10px;
 }
 
-main>p {
+main>.paragrafo {
     display: inline-block;
 }
 
@@ -76,7 +76,10 @@ main>p {
     margin: 10px 10px;
 }
 
+section {
+    margin-top: 5px;
+}
+
 section>p {
     text-align: center;
-    display: block;
 }
