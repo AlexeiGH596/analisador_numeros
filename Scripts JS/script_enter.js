@@ -9,16 +9,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
     document.addEventListener(`keypress`, enter)
     function enter(e) {
         if (e.key === 'Enter') {
-            if (numero.value >= 1 && numero.value <= 100) {
-                valores.push(numero.value);
-                let item = document.createElement(`option`);
-                item.text = `Valor ${numero.value} adicionado;`;
-                lista.appendChild(item);
-            } else {
-                alert(`Valor inválido`);
-            }
-            numero.value = ``;
-            numero.focus();
+            
         }
     }
 })

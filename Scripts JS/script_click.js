@@ -13,10 +13,22 @@ document.addEventListener(`DOMContentLoaded`, function () {
             let item = document.createElement(`option`);
             item.text = `Valor ${numero.value} adicionado;`;
             lista.appendChild(item);
+            saida.innerHTML = ``
         } else {
             alert(`Valor inválido`);
         }
         numero.value = ``;
         numero.focus();
+    }
+
+    botao_finalizar.addEventListener(`click`, finalizar)
+    function finalizar() {
+        if (valores.length == 0) {
+            alert(`Adicione valores para que o programa seja concluído`);
+        } else {
+            let tamanho = valores.length;
+
+            saida.innerHTML = `<p>${tamanho} números cadastrados;</p>`;
+        }
     }
 })

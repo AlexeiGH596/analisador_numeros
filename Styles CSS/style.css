@@ -52,6 +52,8 @@ main>.paragrafo {
 }
 
 .numero {
+    width: 160px;
+    max-width: 160px;
     border: 1px solid #000;
 }
 
@@ -75,6 +77,8 @@ main>.paragrafo {
     font-weight: 400;
     width: 160px;
     max-width: 160px;
+    height: 100px;
+    min-height: 100px;
     padding: 5px;
     border: 1px solid #000;
     margin: 10px 10px;
