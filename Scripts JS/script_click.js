@@ -27,8 +27,22 @@ document.addEventListener(`DOMContentLoaded`, function () {
             alert(`Adicione valores para que o programa seja concluído`);
         } else {
             let tamanho = valores.length;
+            let maior = Math.max(...valores);
+            let menor = Math.min(...valores);
+            let soma = 0;
+            // let mult
+            
+            for (let i in valores) {
+                soma += Number(valores[i]);
+            }
 
-            saida.innerHTML = `<p>${tamanho} números cadastrados;</p>`;
+            let media = soma/tamanho;
+
+            saida.innerHTML = `<p><strong>${tamanho}</strong> números cadastrados;</p>`;
+            saida.innerHTML += `<p><strong>${maior}</strong> é o maior número informado;</p>`;
+            saida.innerHTML += `<p><strong>${menor}</strong> é o menor número informado;</p>`;
+            saida.innerHTML += `<p><strong>${soma}</strong> é o resultado da soma;</p>`;
+            saida.innerHTML += `<p><strong>${media}</strong> é a media fodaseee;</p>`;
         }
     }
 })

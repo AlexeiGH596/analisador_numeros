@@ -34,8 +34,8 @@ main {
     background-color: #FFF;
     font-family: var(--fonte_paragrafos);
     font-weight: 500;
-    width: 50vw;
-    max-width: 50vw;
+    width: 100%;
+    max-width: 60vw;
     padding: 1em;
     border: 3px solid #000;
     border-radius: 10px;
