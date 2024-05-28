@@ -1,9 +1,10 @@
 document.addEventListener(`DOMContentLoaded`, function () {
     let numero = document.getElementsByClassName(`numero`)[0]
+    numero.focus();
     let botao_adicionar = document.getElementsByClassName(`botao`)[0]
     let lista = document.getElementsByClassName(`lista`)[0]
     let botao_finalizar = document.getElementsByClassName(`botao`)[1]
-    let saida = document.getElementsByTagName(`section`)[0]
+    let saida = document.getElementsByClassName(`resultado`)[0]
     let valores = []
 
     botao_adicionar.addEventListener(`click`, adicionar)
@@ -23,6 +24,7 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
     botao_finalizar.addEventListener(`click`, finalizar)
     function finalizar() {
+        numero.focus();
         if (valores.length == 0) {
             alert(`Adicione valores para que o programa seja concluído`);
         } else {
@@ -30,19 +32,16 @@ document.addEventListener(`DOMContentLoaded`, function () {
             let maior = Math.max(...valores);
             let menor = Math.min(...valores);
             let soma = 0;
-            // let mult
-            
             for (let i in valores) {
                 soma += Number(valores[i]);
             }
+            let media = soma / tamanho;
 
-            let media = soma/tamanho;
-
-            saida.innerHTML = `<p><strong>${tamanho}</strong> números cadastrados;</p>`;
-            saida.innerHTML += `<p><strong>${maior}</strong> é o maior número informado;</p>`;
-            saida.innerHTML += `<p><strong>${menor}</strong> é o menor número informado;</p>`;
-            saida.innerHTML += `<p><strong>${soma}</strong> é o resultado da soma;</p>`;
-            saida.innerHTML += `<p><strong>${media}</strong> é a media fodaseee;</p>`;
+            saida.innerHTML = `<p><strong>${tamanho}</strong> números foram adicionados;</p>`;
+            saida.innerHTML += `<p><strong>${maior}</strong> foi o maior número informado;</p>`;
+            saida.innerHTML += `<p><strong>${menor}</strong> foi o menor número informado;</p>`;
+            saida.innerHTML += `<p><strong>${soma}</strong> é o resultado da soma total;</p>`;
+            saida.innerHTML += `<p><strong>${media}</strong> é o resultado da média total;</p>`;
         }
     }
 })

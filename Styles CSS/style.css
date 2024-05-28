@@ -29,11 +29,14 @@ h1 {
     margin-top: 1.5em;
 }
 
+p {
+    font-family: var(--fonte_paragrafos);
+    font-weight: 500;
+}
+
 main {
     color: #000;
     background-color: #FFF;
-    font-family: var(--fonte_paragrafos);
-    font-weight: 500;
     width: 100%;
     max-width: 60vw;
     padding: 1em;
@@ -54,7 +57,8 @@ main>.paragrafo {
 .numero {
     width: 160px;
     max-width: 160px;
-    border: 1px solid #000;
+    border: 1.5px solid #000;
+    outline: 0;
 }
 
 .botao {
@@ -68,7 +72,7 @@ main>.paragrafo {
 }
 
 .botao:hover {
-    background-color: #d0d0d0;
+    background-color: #D0D0D0;
 }
 
 .lista {
@@ -84,10 +88,29 @@ main>.paragrafo {
     margin: 10px 10px;
 }
 
-section {
+.resultado {
     margin-top: 5px;
 }
 
-section>p {
+.resultado>p {
     text-align: center;
+}
+
+.final>p {
+    color: #FFF;
+    text-align: center;
+}
+
+a {
+    color: #00F;
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.github {
+    margin-top: 1.5em;
+    margin-bottom: 8px;
 }
