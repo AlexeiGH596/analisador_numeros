@@ -24,7 +24,6 @@ document.addEventListener(`DOMContentLoaded`, function () {
 
     botao_finalizar.addEventListener(`click`, finalizar)
     function finalizar() {
-        numero.focus();
         if (valores.length == 0) {
             alert(`Adicione valores para que o programa seja concluído`);
         } else {
