@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 :root {
-    --fonte_titulos: Arial, poppins, sans-serif;
-    --fonte_paragrafos: poppins, arial, sans-serif;
+    --fonte_titulos: Arial, Poppins, sans-serif;
+    --fonte_paragrafos: Poppins, arial, sans-serif;
     --cor_tema: #1B7CDE;
 }
 
@@ -98,7 +98,7 @@ main>.paragrafo {
     text-align: center;
 }
 
-.final>p {
+div>p {
     color: #FFF;
     text-align: center;
 }
