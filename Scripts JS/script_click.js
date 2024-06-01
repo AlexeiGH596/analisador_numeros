@@ -4,13 +4,13 @@ var lista = document.getElementsByClassName(`lista`)[0]
 var botao_finalizar = document.getElementsByClassName(`botao`)[1]
 var saida = document.getElementsByClassName(`resultado`)[0]
 var valores = []
-numero.focus(); /* não é preciso chamar o evento */
+numero.focus(); // não é preciso chamar o evento
 
 botao_adicionar.addEventListener(`click`, adicionar)
 function adicionar() {
     if (numero.value >= 1 && numero.value <= 100) {
         valores.push(numero.value);
-        // criando elementos HTML dinâmicamente com Js
+        // criando elementos HTML dinâmicamente via Js
         let item = document.createElement(`option`);
         item.text = `Valor ${numero.value} adicionado;`;
         lista.appendChild(item);
@@ -36,7 +36,7 @@ function finalizar() {
         }
         let media = soma / tamanho;
 
-        // melhor forma de adicionar parágrafos (mais eficiente)
+        // forma mais eficiente de adicionar parágrafos
         saida.innerHTML = `<p><strong>${tamanho}</strong> números foram adicionados;</p>`;
         saida.innerHTML += `<p><strong>${maior}</strong> foi o maior número informado;</p>`;
         saida.innerHTML += `<p><strong>${menor}</strong> foi o menor número informado;</p>`;
