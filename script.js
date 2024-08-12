@@ -1,9 +1,9 @@
-var numero = document.getElementsByClassName(`numero`)[0]
-var botao_adicionar = document.getElementsByClassName(`botao`)[0]
-var lista = document.getElementsByClassName(`lista`)[0]
-var botao_finalizar = document.getElementsByClassName(`botao`)[1]
-var saida = document.getElementsByClassName(`resultado`)[0]
-var valores = []
+let numero = document.getElementsByClassName(`numero`)[0]
+let lista = document.getElementsByClassName(`lista`)[0]
+let saida = document.getElementsByClassName(`resultado`)[0]
+const botao_adicionar = document.getElementsByClassName(`botao`)[0]
+const botao_finalizar = document.getElementsByClassName(`botao`)[1]
+let valores = []
 numero.focus(); // não é preciso chamar o evento
 
 botao_adicionar.addEventListener(`click`, adicionar)
@@ -24,7 +24,7 @@ function adicionar() {
 
 botao_finalizar.addEventListener(`click`, finalizar)
 function finalizar() {
-    if (valores.length == 0) {
+    if (valores.length === 0) {
         alert(`Adicione valores para que o programa seja concluído`);
     } else {
         let tamanho = valores.length;
