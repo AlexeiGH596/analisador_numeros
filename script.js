@@ -3,8 +3,8 @@ let lista = document.getElementsByClassName(`lista`)[0]
 let saida = document.getElementsByClassName(`resultado`)[0]
 const botao_adicionar = document.getElementsByClassName(`botao`)[0]
 const botao_finalizar = document.getElementsByClassName(`botao`)[1]
-let valores = []
-numero.focus(); // não é preciso chamar o evento
+const valores = []
+numero.focus(); // não é preciso chamar o evento em si
 
 botao_adicionar.addEventListener(`click`, adicionar)
 function adicionar() {
@@ -32,7 +32,7 @@ function finalizar() {
         let menor = Math.min(...valores);
         let soma = 0;
         for (let i in valores) {
-            soma += Number(valores[i]);
+            soma += Number(valores[i]); // reaproveitando código
         }
         let media = soma / tamanho;
 
