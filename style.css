@@ -18,7 +18,7 @@ h1 {
     font-family: Arial, sans-serif;
     font-weight: 800;
     text-align: center;
-    margin: 32px auto;
+    margin: 50px auto;
 }
 
 main {
@@ -28,7 +28,7 @@ main {
     padding: 16px;
     border: 2px solid #000;
     border-radius: 10px;
-    margin: 32px auto;
+    margin: 50px auto;
 }
 
 main>* {
@@ -80,11 +80,15 @@ main>.paragrafo {
 }
 
 .resultado {
-    margin-top: 5px;
+    margin: 5px auto;
 }
 
 .resultado>p {
     text-align: center;
+}
+
+div {
+    margin: 50px auto;
 }
 
 div>p {
@@ -92,13 +96,22 @@ div>p {
     text-align: center;
 }
 
+/* família LVHA */
 a {
     color: #00F;
     text-decoration: none;
 }
 
+a:visited {
+    color: #800080;
+}
+
 a:hover {
     text-decoration: underline;
+}
+
+a:active {
+    color: #FFF;
 }
 
 .github {

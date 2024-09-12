@@ -41,6 +41,6 @@ function finalizar() {
         saida.innerHTML += `<p><strong>${maior}</strong> foi o maior número informado;</p>`;
         saida.innerHTML += `<p><strong>${menor}</strong> foi o menor número informado;</p>`;
         saida.innerHTML += `<p><strong>${soma}</strong> é o resultado da soma total;</p>`;
-        saida.innerHTML += `<p><strong>${media}</strong> é o resultado da média total;</p>`;
+        saida.innerHTML += `<p><strong>${media}</strong> é o resultado da média total.</p>`;
     }
 }
